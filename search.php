@@ -104,8 +104,8 @@
             </div>
             <div class="mbr-footer-content col-xs-12 col-md-3">
                 <p><strong>যোগাযোগের ঠিকানা</strong><br>
-Email: support@bloodbank.appslab.co.ke<br>
-Phone: +245 710 301 320<br></p>
+Email: ####<br>
+Phone: ####<br></p>
             </div>
             <div class="mbr-footer-content col-xs-12 col-md-3">
                 <p></p><p><strong>লিংক</strong><br>
@@ -123,7 +123,7 @@ Phone: +245 710 301 320<br></p>
 $copyYear = 2016; 
 $curYear = date('Y'); 
 echo $copyYear . (($copyYear != $curYear) ? '-' . $curYear : '');
-?> | <a class="text-white" href="bloodbank.appslab.co.ke">ব্লাড ব্যাংক</a></p>
+?> | <a class="text-white" href="#">HEMATO</a></p>
     </div>
     </div>
 </footer>
