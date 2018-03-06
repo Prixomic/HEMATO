@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
   <meta name="description" content="">
-  <title>SEARCH</title>
+  <title>সার্চ</title>
   
   
 
@@ -35,7 +35,7 @@
 
                     <div class="navbar-brand">
                         <a href="index" class="navbar-logo"><img src="assets/images/logo.png" alt="Mobirise"></a>
-                        <a class="navbar-caption" href="index.html">BLOODBANK</a>
+                        <a class="navbar-caption" href="index.html">ব্লাড  ব্যাংক</a>
                     </div>
 					
 
@@ -46,8 +46,8 @@
                         <div class="hamburger-icon"></div>
                     </button>
 
-                    <ul class="nav-dropdown collapse pull-xs-right nav navbar-nav navbar-toggleable-sm" id="exCollapsingNavbar"><li class="nav-item"><a class="nav-link link" href="index.html">HOME</a></li><li class="nav-item"><a class="nav-link link" href="user/login">LOGIN</a></li>
-                      <li class="nav-item"><a class="nav-link link" href="user/register">REGISTER</a></li><li class="nav-item"><a class="nav-link link" href="camps">CAMPS</a></li><li class="nav-item"><a class="nav-link link" href="search">SEARCH</a></li><li class="nav-item"><a class="nav-link link" href="about">ABOUT</a></li><li class="nav-item"><a class="nav-link link" href="news">NEWS</a></li><li class="nav-item dropdown"><a class="nav-link link dropdown-toggle" href="#" data-toggle="dropdown-submenu" aria-expanded="false">HELP</a><div class="dropdown-menu"><a class="dropdown-item" href="contact">CONTACT US</a><a class="dropdown-item" href="faqs">FAQS</a></div></li></ul>
+                    <ul class="nav-dropdown collapse pull-xs-right nav navbar-nav navbar-toggleable-sm" id="exCollapsingNavbar"><li class="nav-item"><a class="nav-link link" href="index.html">হোম </a></li><li class="nav-item"><a class="nav-link link" href="user/login">লগিন</a></li>
+                      <li class="nav-item"><a class="nav-link link" href="user/register">রেজিস্টার</a></li><li class="nav-item"><a class="nav-link link" href="camps">ক্যাম্পেইন</a></li><li class="nav-item"><a class="nav-link link" href="search">সার্চ</a></li><li class="nav-item"><a class="nav-link link" href="about">আমাদের সম্পর্কে</a></li><li class="nav-item"><a class="nav-link link" href="news">নিউজ</a></li><li class="nav-item dropdown"><a class="nav-link link dropdown-toggle" href="#" data-toggle="dropdown-submenu" aria-expanded="false">হেল্প</a><div class="dropdown-menu"><a class="dropdown-item" href="contact">যোগাযোগ করুন</a><a class="dropdown-item" href="faqs">FAQS</a></div></li></ul>
                     <button hidden="" class="navbar-toggler navbar-close" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
                         <div class="close-icon"></div>
                     </button>
@@ -66,11 +66,11 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-md-offset-2 text-xs-center">
-                <h3 class="mbr-section-title display-2">BLOODBANK</h3>
+                <h3 class="mbr-section-title display-2">ব্লাড ব্যাংক</h3>
                 <div class="lead">
                     <form action="search_result.php" id="search_form" method="GET">
                         <select name="q" autocomplete="off" id="list_search" type="search" required value="<?=@$keyword;?>" class="form-control">
-                            <option >Choose blood group below</option>
+                            <option >আপনার রক্তের গ্রুপ নির্বাচন করুন</option>
                             <option value="O+">O+</option>
                             <option value="O-">O-</option>
                             <option value="A+">A+</option>
@@ -80,7 +80,7 @@
                             <option value="AB+">AB+</option>
                             <option value="AB-">AB-</option>
                         </select>
-                        <button type="submit"  style="border:0px;  width:150px; height:36px; border-radius: 10px;  box-shadow:1px 1px 5px black; color:white; font-weight: 600; font-size:18px; background-color:#D50000;">Search</button>
+                        <button type="submit"  style="border:0px;  width:150px; height:36px; border-radius: 10px;  box-shadow:1px 1px 5px black; color:white; font-weight: 600; font-size:18px; background-color:#D50000;">সার্চ</button>
                     </form>
 				
 				
@@ -103,13 +103,13 @@
                 <p><strong>Address</strong><br>30300<br>Moi University, Eldoret</p>
             </div>
             <div class="mbr-footer-content col-xs-12 col-md-3">
-                <p><strong>Contacts</strong><br>
+                <p><strong>যোগাযোগের ঠিকানা</strong><br>
 Email: support@bloodbank.appslab.co.ke<br>
 Phone: +245 710 301 320<br></p>
             </div>
             <div class="mbr-footer-content col-xs-12 col-md-3">
-                <p></p><p><strong>Links</strong><br>
-<a href="../user/viewrequests" class="text-white">View Request</a><br><a href="camps" class="text-white">Camps</a><br><a href="about" class="text-white">About</a><br><a href="contact" class="text-white">Contact us</a><br></p><p></p>
+                <p></p><p><strong>লিংক</strong><br>
+<a href="../user/viewrequests" class="text-white">রিকুয়েস্ট দেখুন</a><br><a href="camps" class="text-white">কাম্পেইন</a><br><a href="about" class="text-white">আমাদের সম্পর্কে</a><br><a href="contact" class="text-white">যোগাযোগ করুন</a><br></p><p></p>
             </div>
 
         </div>
@@ -123,7 +123,7 @@ Phone: +245 710 301 320<br></p>
 $copyYear = 2016; 
 $curYear = date('Y'); 
 echo $copyYear . (($copyYear != $curYear) ? '-' . $curYear : '');
-?> | <a class="text-white" href="bloodbank.appslab.co.ke">BLOODBANK</a></p>
+?> | <a class="text-white" href="bloodbank.appslab.co.ke">ব্লাড ব্যাংক</a></p>
     </div>
     </div>
 </footer>
