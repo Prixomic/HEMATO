@@ -35,7 +35,7 @@
 
                     <div class="navbar-brand">
                         <a href="index" class="navbar-logo"><img src="assets/images/logo.png" alt="Mobirise"></a>
-                        <a class="navbar-caption" href="index.html">ব্লাড  ব্যাংক</a>
+                        <a class="navbar-caption" href="index.html">HEMATO</a>
                     </div>
 					
 
@@ -46,8 +46,8 @@
                         <div class="hamburger-icon"></div>
                     </button>
 
-                    <ul class="nav-dropdown collapse pull-xs-right nav navbar-nav navbar-toggleable-sm" id="exCollapsingNavbar"><li class="nav-item"><a class="nav-link link" href="index.html">হোম </a></li><li class="nav-item"><a class="nav-link link" href="user/login">লগিন</a></li>
-                      <li class="nav-item"><a class="nav-link link" href="user/register">রেজিস্টার</a></li><li class="nav-item"><a class="nav-link link" href="camps">ক্যাম্পেইন</a></li><li class="nav-item"><a class="nav-link link" href="search">সার্চ</a></li><li class="nav-item"><a class="nav-link link" href="about">আমাদের সম্পর্কে</a></li><li class="nav-item"><a class="nav-link link" href="news">নিউজ</a></li><li class="nav-item dropdown"><a class="nav-link link dropdown-toggle" href="#" data-toggle="dropdown-submenu" aria-expanded="false">হেল্প</a><div class="dropdown-menu"><a class="dropdown-item" href="contact">যোগাযোগ করুন</a><a class="dropdown-item" href="faqs">FAQS</a></div></li></ul>
+                    <ul class="nav-dropdown collapse pull-xs-right nav navbar-nav navbar-toggleable-sm" id="exCollapsingNavbar"><li class="nav-item"><a class="nav-link link" href="index.html">হোম </a></li><li class="nav-item"><a class="nav-link link" href="user/login">লগইন</a></li>
+                      <li class="nav-item"><a class="nav-link link" href="user/register">রেজিস্টার</a></li><li class="nav-item"><a class="nav-link link" href="camps">ক্যাম্পেইন</a></li><li class="nav-item"><a class="nav-link link" href="search">সার্চ</a></li><li class="nav-item"><a class="nav-link link" href="about">আমাদের সম্পর্কে জানুন</a></li><li class="nav-item"><a class="nav-link link" href="news">নিউজ</a></li><li class="nav-item dropdown"><a class="nav-link link dropdown-toggle" href="#" data-toggle="dropdown-submenu" aria-expanded="false">হেল্প</a><div class="dropdown-menu"><a class="dropdown-item" href="contact">যোগাযোগ করুন</a><a class="dropdown-item" href="faqs">FAQS</a></div></li></ul>
                     <button hidden="" class="navbar-toggler navbar-close" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
                         <div class="close-icon"></div>
                     </button>
