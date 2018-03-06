@@ -14,7 +14,7 @@ $sql=$MySQLi_CON->query("SELECT distinct * FROM `donarregister` WHERE b_id LIKE 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
   <meta name="description" content="">
-  <title>SEARCH RESULTS</title>
+  <title>অনুসন্ধান ফলাফল</title>
   
   
 
@@ -42,7 +42,7 @@ $sql=$MySQLi_CON->query("SELECT distinct * FROM `donarregister` WHERE b_id LIKE 
 
                     <div class="navbar-brand">
                         <a href="index" class="navbar-logo"><img src="assets/images/logo.png" alt="Mobirise"></a>
-                        <a class="navbar-caption" href="index.html">BLOODBANK</a>
+                        <a class="navbar-caption" href="index.html">ব্লাডব্যাংক</a>
                     </div>
 
                 </div>
@@ -52,8 +52,8 @@ $sql=$MySQLi_CON->query("SELECT distinct * FROM `donarregister` WHERE b_id LIKE 
                         <div class="hamburger-icon"></div>
                     </button>
 
-                    <ul class="nav-dropdown collapse pull-xs-right nav navbar-nav navbar-toggleable-sm" id="exCollapsingNavbar"><li class="nav-item"><a class="nav-link link" href="index.html">HOME</a></li><li class="nav-item"><a class="nav-link link" href="user/login">LOGIN</a></li>
-                      <li class="nav-item"><a class="nav-link link" href="user/register">REGISTER</a></li><li class="nav-item"><a class="nav-link link" href="camps">CAMPS</a></li><li class="nav-item"><a class="nav-link link" href="search">SEARCH</a></li><li class="nav-item"><a class="nav-link link" href="about">ABOUT</a></li><li class="nav-item"><a class="nav-link link" href="news">NEWS</a></li><li class="nav-item dropdown"><a class="nav-link link dropdown-toggle" href="#" data-toggle="dropdown-submenu" aria-expanded="false">HELP</a><div class="dropdown-menu"><a class="dropdown-item" href="contact">CONTACT US</a><a class="dropdown-item" href="faqs">FAQS</a></div></li></ul>
+                    <ul class="nav-dropdown collapse pull-xs-right nav navbar-nav navbar-toggleable-sm" id="exCollapsingNavbar"><li class="nav-item"><a class="nav-link link" href="index.html">হোম</a></li><li class="nav-item"><a class="nav-link link" href="user/login">লগইন</a></li>
+                      <li class="nav-item"><a class="nav-link link" href="user/register">রেজিষ্টার</a></li><li class="nav-item"><a class="nav-link link" href="camps">ক্যাম্পেইন</a></li><li class="nav-item"><a class="nav-link link" href="search">অনুসন্ধান করুন</a></li><li class="nav-item"><a class="nav-link link" href="about">আমাদের সম্পর্কে</a></li><li class="nav-item"><a class="nav-link link" href="news">সংবাদ</a></li><li class="nav-item dropdown"><a class="nav-link link dropdown-toggle" href="#" data-toggle="dropdown-submenu" aria-expanded="false">সাহায্য নিন</a><div class="dropdown-menu"><a class="dropdown-item" href="contact">যোগাযোগ করুন</a><a class="dropdown-item" href="faqs">FAQS</a></div></li></ul>
                     <button hidden="" class="navbar-toggler navbar-close" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
                         <div class="close-icon"></div>
                     </button>
@@ -77,7 +77,7 @@ $sql=$MySQLi_CON->query("SELECT distinct * FROM `donarregister` WHERE b_id LIKE 
                     <div>
                         <form action="search_result.php" id="search_form" method="GET">
                             <select name="q" autocomplete="off" id="list_search" type="search" required value="<?=@$keyword;?>" class="form-control">
-                                <option >Choose blood group below</option>
+                                <option >আপনার রক্তের গ্রুপ নির্বাচন করুন</option>
                                 <option value="O+">O+</option>
                                 <option value="O-">O-</option>
                                 <option value="A+">A+</option>
@@ -87,7 +87,7 @@ $sql=$MySQLi_CON->query("SELECT distinct * FROM `donarregister` WHERE b_id LIKE 
                                 <option value="AB+">AB+</option>
                                 <option value="AB-">AB-</option>
                             </select>
-                            <button type="submit" style="border:0px; margin-top: 10px;  width:150px; height:36px; border-radius: 10px;  box-shadow:1px 1px 5px black; color:white; font-weight: 600; font-size:18px; background-color:#D50000;">Search</button>
+                            <button type="submit" style="border:0px; margin-top: 10px;  width:150px; height:36px; border-radius: 10px;  box-shadow:1px 1px 5px black; color:white; font-weight: 600; font-size:18px; background-color:#D50000;">সার্চ</button>
                         </form>
                     </div>
                     <div>
@@ -96,13 +96,13 @@ $sql=$MySQLi_CON->query("SELECT distinct * FROM `donarregister` WHERE b_id LIKE 
                                 <?php foreach ($sql as $key => $search_data) : ?>
 
                                     <table class="table table-responsive bg-table" style="border-style: none; ">
-                                        <tr><td>Email</td>
+                                        <tr><td>ই-মেইল</td>
                                             <td>: <?=$search_data['email'] ?></td>
                                         </tr>
-                                        <tr><td>Phone No.</td>
+                                        <tr><td>মোবাইল নাম্বার</td>
                                             <td>: <?=$search_data['mobile'] ?></td>
                                         </tr>
-                                        <tr><td>Blood Group</td>
+                                        <tr><td>ব্লাড গ্রুপ</td>
                                             <td>: <?=$dbContent = str_ireplace($keyword,'<b>'.$keyword.'</b>',$search_data['b_id']); ?></td>
                                         </tr>
                                     </table><br>
@@ -110,7 +110,7 @@ $sql=$MySQLi_CON->query("SELECT distinct * FROM `donarregister` WHERE b_id LIKE 
                                 <?php endforeach; ?>
                             </div>
                         <?php else :?>
-                            <p style="padding-top: 20px;">Your search for blood group <b><?=@$keyword;?></b> did not match any registered donor.</p>
+                            <p style="padding-top: 20px;">আপনার অনুসন্ধান এর ফলাফল <b><?=@$keyword;?></b> কোন ডোনারের সাথে মিলে নি।</p>
                         <?php endif; ?>
                     </div>
                     <?php endif; ?>
@@ -128,16 +128,16 @@ $sql=$MySQLi_CON->query("SELECT distinct * FROM `donarregister` WHERE b_id LIKE 
                 <div><img src="assets/images/logo.png"></div>
             </div>
             <div class="mbr-footer-content col-xs-12 col-md-3">
-                <p><strong>Address</strong><br>30300<br>Moi University, Eldoret</p>
+                <p><strong>ঠিকানা</strong><br>30300<br>Moi University, Eldoret</p>
             </div>
             <div class="mbr-footer-content col-xs-12 col-md-3">
-                <p><strong>Contacts</strong><br>
-Email: support@bloodbank.appslab.co.ke<br>
-Phone: +245 710 301 320<br></p>
+                <p><strong>যোগাযোগ</strong><br>
+ই-মেইল: support@bloodbank.appslab.co.ke<br>
+মোবাইল: +245 710 301 320<br></p>
             </div>
             <div class="mbr-footer-content col-xs-12 col-md-3">
-                <p></p><p><strong>Links</strong><br>
-<a href="user/request" class="text-white">Send Request</a><br><a href="user/viewrequests" class="text-white">View Request</a><br><a href="camps" class="text-white">Camps</a><br><a href="about" class="text-white">About</a><br><a href="contact" class="text-white">Contact us</a><br></p><p></p>
+                <p></p><p><strong>লিঙ্কসমূহ</strong><br>
+<a href="user/request" class="text-white">আবেদন করুন</a><br><a href="user/viewrequests" class="text-white">আবেদন দেখুন</a><br><a href="camps" class="text-white">Camps</a><br><a href="about" class="text-white">About</a><br><a href="contact" class="text-white">যোগাযোগ করুন</a><br></p><p></p>
             </div>
 
         </div>
@@ -151,7 +151,7 @@ Phone: +245 710 301 320<br></p>
 $copyYear = 2016; 
 $curYear = date('Y'); 
 echo $copyYear . (($copyYear != $curYear) ? '-' . $curYear : '');
-?> | <a class="text-white" href="bloodbank.appslab.co.ke">BLOODBANK</a></p>
+?> | <a class="text-white" href="bloodbank.appslab.co.ke">ব্লাডব্যাঙ্ক</a></p>
     </div>
     </div>
 </footer>
