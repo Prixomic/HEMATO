@@ -35,7 +35,7 @@
 
                     <div class="navbar-brand">
                         <a href="index" class="navbar-logo"><img src="assets/images/logo.png" alt="Mobirise"></a>
-                        <a class="navbar-caption" href="index.html">HEMATO</a>
+                        <a class="navbar-caption" href="http://hemato.byethost4.com">HEMATO</a>
                     </div>
 					
 
@@ -66,7 +66,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-md-offset-2 text-xs-center">
-                <h3 class="mbr-section-title display-2">ব্লাড ব্যাংক</h3>
+                <h3 class="mbr-section-title display-2">HEMATO</h3>
                 <div class="lead">
                     <form action="search_result.php" id="search_form" method="GET">
                         <select name="q" autocomplete="off" id="list_search" type="search" required value="<?=@$keyword;?>" class="form-control">
@@ -100,7 +100,7 @@
                 <div><img src="assets/images/logo.png"></div>
             </div>
             <div class="mbr-footer-content col-xs-12 col-md-3">
-                <p><strong>Address</strong><br>30300<br>Moi University, Eldoret</p>
+                <p><strong> ঠিকানা </strong><br>সিলেট পলিটেকনিক ইনস্টিটিউট <br> সিলেট - ৩১০০</p>
             </div>
             <div class="mbr-footer-content col-xs-12 col-md-3">
                 <p><strong>যোগাযোগের ঠিকানা</strong><br>
@@ -123,7 +123,7 @@ Phone: ####<br></p>
 $copyYear = 2016; 
 $curYear = date('Y'); 
 echo $copyYear . (($copyYear != $curYear) ? '-' . $curYear : '');
-?> | <a class="text-white" href="#">HEMATO</a></p>
+?> | <a class="text-white" href="http://hemato.byethost4.com">HEMATO</a></p>
     </div>
     </div>
 </footer>
